@@ -1,16 +1,10 @@
-
-import { setupCounter } from './counter'
+import {datetime} from "./apis/Datetime";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
+    <h1>Datetime Wrapper</h1>
     <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
+      now YMD : ${datetime().format('YYYY-MM-DD')}
     </p>
   </div>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
