@@ -1,4 +1,4 @@
-import {datetime} from "./apis/Datetime";
+import {datetime} from "./apis/datetime.moment";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>

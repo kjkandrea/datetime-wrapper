@@ -1,17 +1,16 @@
 import moment from "moment";
 
-type ConstructDate = Date | number
 type DateFormat = 'YYYY-MM-DD' | 'LTS'
 type DateUnit = 'day' | 'month' | 'year'
 
 class Datetime {
 	private _date: Date;
 
-	constructor(date: ConstructDate = new Date()) {
-		this._date = date instanceof Date ? date : new Date(date)
+	constructor(date = new Date()) {
+		this._date = date
 	}
 
-	static datetime(date: ConstructDate = new Date()) {
+	static datetime(date = new Date()) {
 		return new Datetime(date)
 	}
 
