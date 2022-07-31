@@ -1,4 +1,4 @@
-import {datetime} from "./apis/datetime.moment";
+import {datetime} from "./apis/datetime.dayjs";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
